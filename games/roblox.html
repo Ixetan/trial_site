@@ -1,19 +1,40 @@
 <html>
     <head>
         <link rel="stylesheet" href="games.css">
+        <title>Venomshop.com</title>
     </head>
     <body>
+        <a href="../card.html" class="header-top">Venomshop</a>
         <h1>Roblox</h1>
         <div class="gallery">
             <div class="gallery_current">
-                <img srs="../img/roblox.png">
+                <img id="mainImage" src="../img/roblox.png">
             </div>
-            <dev class="gallery_list">
-                <img src="../img/roblox.png">
-                <img src="../img/roblox2.jpg">
-                <img src="../img/roblox3.webp">
-                <img src="../img/roblox4.webp">
-            </dev>
+            <div class="gallery_list">
+                <img id="firstImage" class="active" onclick="clickImage(event)" src="../img/roblox.png">
+                <img onclick="clickImage(event)" src="../img/roblox2.jpg">
+                <img onclick="clickImage(event)" src="../img/roblox3.webp">
+                <img onclick="clickImage(event)" src="../img/roblox4.webp">
+            </div>
         </div>
     </body>
+    <footer>
+        <script>
+            /* alert("Привет, Мир!")
+            alert("Теперь ПК под моим контролем!") */
+            var lastImageClicked = document.getElementById("firstImage")
+            function clickImage(event) {
+                const target = event.target
+                const mainImage = document.getElementById('mainImage')
+
+                const newImageURL = target.getAttribute('src')
+
+                mainImage.setAttribute('src', newImageURL)
+                
+                lastImageClicked.classList.remove('active')
+                target.classList.add("active")
+                lastImageClicked = target
+            }
+        </script>
+    </footer>
 </html>

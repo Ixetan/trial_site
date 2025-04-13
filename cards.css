@@ -7,6 +7,15 @@ body {
     justify-content: center;
 }
 
+.header-top {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: red;
+    height: 50px;
+    width: 50px;
+}
+
 .all-cards {
     display: grid;
     grid-template-columns: 300px 300px 300px;
