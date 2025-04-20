@@ -73,7 +73,7 @@ body {
 }
 
 .card-footer > a {
-    border: 2px solid rgb(44, 70, 123);
+    border: 2px solid rgba(44, 70, 123, 0.400);
     padding: 4px;
     color: wheat;
     text-decoration: none;
@@ -81,6 +81,6 @@ body {
 }
 
 .card-footer > a:hover {
-    background-color: rgb(44, 70, 123);
+    background-color: rgba(44, 70, 123, 0.400);
     transform: scale(110%);
 }
