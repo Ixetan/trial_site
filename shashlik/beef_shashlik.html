@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="shashlik.css">
+        <title>Шашлыки.ру</title>
+        <a href="../shashlik_ru.html" class="title">🍢 Шашлыки.ру</a>
+    </head>
+    <body>
+        <div class="header_container"> 
+            <div class="header_info">
+                <div class="header_info_top">
+                    <div class="shashlik_box-art">
+                        <img src="../img/beef_shashlik.jpg"/>
+                    </div>
+                    <div class="shashlik_brief_description">
+                        <h1>Говяжий шашлык</h1>
+                        <h3></h3>
+                        <h3>Цена: ₽500</h3>
+                        <div class="card-footer" id="payButton" onclick="payOrder()">
+                            <a>🛒 Оплатить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_info_bottom">
+                    <h1>Описание: Говяжий шашлык — это блюдо для настоящих ценителей мясных деликатесов. Сочное и нежное мясо, предварительно замаринованное в специальном соусе с добавлением пикантных специй, раскрывает свой неповторимый вкус при приготовлении на углях.</h1>
+                    <h1>Для нашего говяжьего шашлыка мы выбираем только высококачественное мясо. Тщательный отбор и правильный маринад делают каждый кусочек идеальным для того, чтобы порадовать ваши вкусовые рецепторы. Подаётся с разнообразными соусами и лёгкими закусками, которые подчёркивают и дополняют вкус мяса.</h1>
+                    <h1>Попробуйте наш говяжий шашлык и откройте для себя новые грани вкуса!</h1>
+                </div>
+            </div>
+        </div>
+        <script>
+            function payOrder() {
+                const payButton = document.getElementById('payButton');
+                payButton.innerHTML = '<a>✅ Заказ оплачен</a>';
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(255, 236, 141);
+    color: rgb(244, 237, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%; 
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+.title {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    z-index: 1;
+    user-select: none
+}
+
+.image-text-container > img {
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    user-select: none
+}
+
+.image-text-container { 
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.text-overlay { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 30px; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+}
+
+.all-cards {
+    display: flex;
+    gap: 10px;
+    background-color: rgb(255, 236, 141);
+    color: rgb(244, 237, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(243, 185, 60);
+    border-radius: 20px;
+    border: 2px solid rgb(221, 130, 0);
+    width: 280px;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.card > img {
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+    object-fit: cover;
+    user-select: none
+}
+
+.card-content {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-text > h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.card-text > p {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-footer > a {
+    border: 2px solid rgb(221, 130, 0);
+    padding: 4px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    user-select: none
+}
+
+.card-footer > a:hover {
+    background-color: rgb(221, 130, 0);
+    transform: scale(110%);
+}

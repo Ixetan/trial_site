@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(255, 236, 141);
+    color: rgb(244, 237, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%; 
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+.title {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    z-index: 1;
+    user-select: none
+}
+.header_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header_info {
+    width: 90%;
+    height: 600px;
+    background-color: rgb(243, 185, 60);
+    border: 2px solid rgb(221, 130, 0);
+    border-radius: 15px;
+}
+
+.header_info_top {
+    gap: 15px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.shashlik_box-art {
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.shashlik_box-art > img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none
+}
+
+.shashlik_brief_description {
+    position: relative;
+}
+
+.shashlik_brief_description > * {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.card-footer {
+    border: 2px solid rgb(221, 130, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 15px;
+    align-items: center;
+    width: 50%;
+    cursor: pointer;
+    background-color: rgb(221, 130, 0);
+    user-select: none
+}
+
+.card-footer:hover {  
+    transform: scale(110%);
+}
+
+.header_info_bottom {
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 1.3;
+}
